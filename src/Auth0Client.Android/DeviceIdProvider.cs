@@ -1,6 +1,4 @@
-﻿using System;
-using Android.Provider;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Android.OS;
 
 namespace Auth0.SDK
@@ -9,7 +7,7 @@ namespace Auth0.SDK
 	{
 		public Task<string> GetDeviceId()
 		{
-			return Task.FromResult<string>(string.Format("{0} {1}", Build.Brand, Build.Model));
+			return Task.FromResult(string.Format("{0} {1}", Build.Brand, Build.Model));
 		}
 	}
 }

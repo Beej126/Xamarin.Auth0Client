@@ -1,6 +1,6 @@
-using Newtonsoft.Json.Linq;
 using System;
 using System.Text;
+using Newtonsoft.Json.Linq;
 
 namespace Auth0.SDK
 {

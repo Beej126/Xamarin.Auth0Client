@@ -1,6 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
-
+﻿using System.Threading.Tasks;
 #if __UNIFIED__
 using UIKit;
 #else
@@ -13,7 +11,7 @@ namespace Auth0.SDK
 	{
 		public Task<string> GetDeviceId ()
 		{
-			return Task.FromResult<string>(UIDevice.CurrentDevice.Name);
+			return Task.FromResult(UIDevice.CurrentDevice.Name);
 		}
 	}
 }
